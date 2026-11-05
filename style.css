@@ -81,7 +81,7 @@ nav a:hover,
     /* Nature-inspired background image with a dark overlay for readable text */
     background:
         linear-gradient(90deg, rgba(20, 43, 30, 0.78), rgba(20, 43, 30, 0.12)),
-        url("https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=85");
+        url("https://scontent.fdvo1-1.fna.fbcdn.net/v/t39.30808-6/762660873_4064786840482997_5022112791563633274_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1152&ctp=s2048x1152&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFUZl34MYnz5KuBLdUTp9TNYm-YvHiy805ib5i8eLLzTgnkn6I0z-CWFzmto2oHxosmtte-eJcFEDrNb9G6wJ44&_nc_ohc=8yhj737CDGAQ7kNvwH9qpKi&_nc_oc=AdoSNeNy8rA8iQWGwBZCqu5XStj5x7XMW10EydQMAr6Sn7nak_0hwy8er4-42yh6wbk&_nc_zt=23&_nc_ht=scontent.fdvo1-1.fna&_nc_gid=gyHWy0BXc21pJCTZTGz6Sw&_nc_ss=7b2a8&oh=00_AQTPa43-0ZTjShpbxSj_a-JFfcqcjQqJ4YIbLvO7t7EYWQ&oe=6AF1DD4B");
     background-size: cover;
     background-position: center;
 }
