@@ -1,0 +1,332 @@
+/* ==================== BASIC PAGE SETTINGS ==================== */
+
+/* Remove default spacing and make sizing easier to manage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352b;
+    background-color: #f7f8f2;
+    line-height: 1.6;
+}
+
+/* Reusable green accent color */
+:root {
+    --forest: #294b38;
+    --leaf: #6f8b62;
+    --cream: #f7f8f2;
+    --muted: #68756a;
+}
+
+/* ==================== HEADER / NAVIGATION ==================== */
+
+.site-header {
+    min-height: 76px;
+    padding: 18px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--cream);
+}
+
+.logo {
+    color: var(--forest);
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--leaf);
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+nav a {
+    color: #425348;
+    text-decoration: none;
+    font-size: 0.92rem;
+}
+
+nav a:hover,
+.text-link:hover {
+    color: var(--leaf);
+}
+
+/* ==================== HERO SECTION ==================== */
+
+.hero {
+    min-height: 570px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+
+    /* Nature-inspired background image with a dark overlay for readable text */
+    background:
+        linear-gradient(90deg, rgba(20, 43, 30, 0.78), rgba(20, 43, 30, 0.12)),
+        url("https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 620px;
+    color: white;
+}
+
+.eyebrow {
+    color: #a9c49a;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+    line-height: 1.08;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 490px;
+    color: #edf1e9;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    color: white;
+    background-color: #6f8b62;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.92rem;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #526e4a;
+}
+
+/* ==================== DESTINATION SECTION ==================== */
+
+.section {
+    padding: 85px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.section-heading .eyebrow,
+.about-section .eyebrow {
+    color: var(--leaf);
+}
+
+.section-heading h2,
+.story-content h2,
+.about-section h2 {
+    color: var(--forest);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destination-card {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 5px 20px rgba(35, 55, 40, 0.07);
+}
+
+.destination-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.04);
+}
+
+.card-content {
+    padding: 23px;
+}
+
+.card-location {
+    color: var(--leaf);
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+.card-content h3 {
+    color: var(--forest);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.card-content p:last-child {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+/* ==================== FOOD STORY SECTION ==================== */
+
+.story-section {
+    padding: 75px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+    background-color: #edf1e8;
+}
+
+.story-image img {
+    display: block;
+    width: 100%;
+    min-height: 350px;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.story-content p:not(.eyebrow) {
+    color: var(--muted);
+    margin: 15px 0;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--forest);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ==================== ABOUT SECTION ==================== */
+
+.about-section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.about-section > p:last-child {
+    color: var(--muted);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* ==================== FOOTER ==================== */
+
+.site-footer {
+    padding: 28px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--forest);
+    color: #e7eee3;
+}
+
+.footer-logo {
+    color: white;
+}
+
+.site-footer p {
+    font-size: 0.85rem;
+    color: #d1ddce;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Adjust the layout for tablets and smaller screens */
+@media (max-width: 800px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-section {
+        gap: 30px;
+    }
+}
+
+/* Stack sections and navigation on mobile phones */
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 70px 7%;
+    }
+
+    .section {
+        padding: 65px 7%;
+    }
+
+    .card-grid,
+    .story-section {
+        grid-template-columns: 1fr;
+    }
+
+    .story-section {
+        padding: 60px 7%;
+    }
+
+    .story-image img {
+        min-height: 250px;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
